@@ -1,0 +1,69 @@
+# ==============================================================================
+# InsightRAG - Git Ignore Rules
+# ==============================================================================
+
+# --- Secrets and Environment Variables ---
+.env
+.env.*
+!.env.example
+secrets.json
+
+# --- Python Build and Cache ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Node & Frontend Build ---
+node_modules/
+dist/
+build/
+.svelte-kit/
+.next/
+out/
+.docusaurus/
+.vite/
+tsconfig.tsbuildinfo
+
+# --- IDEs and Text Editors ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+logs/
+backend/logs/
+frontend/logs/
+
+# --- Data, Indexes, and Local Databases (RAG Indexes) ---
+*.faiss
+*.pkl
+backend/data/
+frontend/data/
+data/
+uploads/
+temp_docs/
